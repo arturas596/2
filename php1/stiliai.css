@@ -1,0 +1,31 @@
+#interface {
+background: #64b1ff;
+width: 360px;
+height: 300px;
+position: absolute;
+top:0; bottom: 0;
+left: 0; right: 0;
+padding: 10px 20px;
+margin: auto;
+text-align: center;
+}
+table {
+width: 100%;
+}
+table, th, td {
+border: 1px solid gray;
+}
+input {
+width: 300px;
+font-size: 1.5em;
+}
+h1 { margin: 5px; }
+body {
+font-family: Arial;
+background: url('bg.jpg');
+}
+label {
+color: #000;
+font-size: 1.4em;
+font-weight: bold;
+}
