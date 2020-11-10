@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+?>
 <div id="interface">
 <h1>Naujas įrašas</h1>
 <form method="POST" action="insert_record.php">

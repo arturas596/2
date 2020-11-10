@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+?>
 <div id="interface">
 <h1>Duomenų paieška</h1>
 <form method="POST" action="radau.php">

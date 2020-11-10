@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+?>
 <div id="interface">
 <h1>Naujas įrašas</h1>
 <?php $id=$_GET['id'];

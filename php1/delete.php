@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+?>
 <body>
 <div id="interface">
 <h1>Gimtadieniai</h1>

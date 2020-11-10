@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+?>
 <head>
 <link href="stiliai.css" rel='stylesheet'>
 </head>

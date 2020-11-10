@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION['uname'])
+{
+    die("Not admin.");
+}
+
 $sql = "INSERT INTO gimtadieniai (vardas,
 data)
 VALUES ('John','2018-03-02')";
@@ -9,3 +16,4 @@ if ($conn->query($sql) === TRUE) {
  echo "Error: " . $sql . "<br>" . $conn-
 >error;
 }
+?>
